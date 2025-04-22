@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ใบรับแจ้งอุปกรณ์ขัดข้อง</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function autoSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        mode: 'no-cors'
+      }).then(() => {
+        alert("ส่งข้อมูลเรียบร้อยแล้ว!");
+        form.reset();
+      });
+    }
+  </script>
+</head>
+<body class="bg-pink-50 text-gray-800">
+  <div class="max-w-4xl mx-auto p-6 bg-white rounded-2xl shadow-xl mt-10">
+    <h1 class="text-2xl font-bold text-center text-pink-500 mb-6">ใบรับแจ้งอุปกรณ์ขัดข้อง</h1>
+    <form 
+      action="https://docs.google.com/forms/d/e/1FAIpQLSdG2rFsqjUmeT3VHFNSnC1MJA0pgg2Vd_EeDxjUBaFJTA7rDw/formResponse" 
+      method="POST" 
+      target="hidden_iframe" 
+      onsubmit="autoSubmit(event)"
+      class="grid grid-cols-1 gap-4"
+    >
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">วันที่</label>
+        <input type="date" name="entry.935311027" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">Job Number</label>
+        <input type="text" name="entry.842059129" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">ชื่องาน</label>
+        <input type="text" name="entry.349106175" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">ผู้แจ้ง</label>
+        <select name="entry.1019627264" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+          <option value="Alarm Scada">Alarm Scada</option>
+          <option value="Alarm LCS">Alarm LCS</option>
+          <option value="หน่วยงานอื่นๆ">หน่วยงานอื่นๆ</option>
+        </select>
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">ชื่อ หน่วยงาน</label>
+        <input type="text" name="entry.1246777860" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">เบอร์โทรศัพท์ติดต่อ (หน่วยงาน)</label>
+        <input type="text" name="entry.1141523881" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">วิทยุ / รหัส (หน่วยงาน)</label>
+        <input type="text" name="entry.1399001110" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">ปัญหา / อาการ ที่รับแจ้ง</label>
+        <input type="text" name="entry.1745153021" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">ชื่อ ผู้รับแจ้ง</label>
+        <input type="text" name="entry.1827881282" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">ตำแหน่ง (ผู้รับแจ้ง)</label>
+        <input type="text" name="entry.1360865974" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">เบอร์โทรศัพท์ติดต่อ (ผู้รับแจ้ง)</label>
+        <input type="text" name="entry.2046144505" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">วิทยุ / รหัส (ผู้รับแจ้ง)</label>
+        <input type="text" name="entry.1965194638" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">วันที่ (การดำเนินการ)</label>
+        <input type="date" name="entry.1071680034" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">รายละเอียดการดำเนินการ</label>
+        <input type="text" name="entry.1245104419" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+  	<label class="text-sm font-medium text-gray-700 mb-1">เวลาที่รับแจ้ง (การดำเนินการ)</label>
+  	<input type="time" name="entry.1829637486" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <!-- เริ่มกลุ่มถัดไป -->
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">ชื่อ ผู้ดำเนินการ</label>
+        <input type="text" name="entry.36801356" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">ตำแหน่ง (ผู้ดำเนินการ)</label>
+        <input type="text" name="entry.976420340" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">เบอร์โทรศัพท์ติดต่อ (ผู้ดำเนินการ)</label>
+        <input type="text" name="entry.2109640109" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">วิทยุ / รหัส (ผู้ดำเนินการ)</label>
+        <input type="text" name="entry.1186179526" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">วันที่ (การปฏิบัติงาน)</label>
+        <input type="date" name="entry.1720206043" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <!-- กลุ่มผลการปฏิบัติงาน -->
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">ชื่อ ผู้แจ้งผลการปฏิบัติงาน</label>
+        <input type="text" name="entry.448374629" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">ตำแหน่ง (ผู้แจ้งผลการปฏิบัติงาน)</label>
+        <input type="text" name="entry.1635826532" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">เบอร์โทรศัพท์ติดต่อ (ผู้แจ้งผลการปฏิบัติงาน)</label>
+        <input type="text" name="entry.741559091" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">วิทยุ / รหัส (ผู้แจ้งผลการปฏิบัติงาน)</label>
+        <input type="text" name="entry.2134872052" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+  	<label class="text-sm font-medium text-gray-700 mb-1">เวลาที่รับแจ้ง (การปฏิบัติงาน)</label>
+  	<input type="time" name="entry.324163470" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">ชื่อ ผู้รับแจ้งผลการปฏิบัติงาน</label>
+        <input type="text" name="entry.1746800918" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">ตำแหน่ง (ผู้รับแจ้งผลการปฏิบัติงาน)</label>
+        <input type="text" name="entry.206858212" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">เบอร์โทรศัพท์ติดต่อ (ผู้รับแจ้งผลการปฏิบัติงาน)</label>
+        <input type="text" name="entry.132657623" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">วิทยุ / รหัส (ผู้รับแจ้งผลการปฏิบัติงาน)</label>
+        <input type="text" name="entry.957232801" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <!-- ผู้จัดการ -->
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">ลงชื่อ ผู้จัดการบริหารโครงการ/ผู้ช่วยผู้จัดการบริหารโครงการ</label>
+        <input type="text" name="entry.2085297757" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">วันที่ (ลงชื่อ ผู้จัดการบริหารโครงการ)</label>
+        <input type="date" name="entry.597176734" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <!-- ผู้ควบคุมงาน -->
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">ลงชื่อ ผู้ควบคุมงาน/ผู้ช่วยผู้ควบคุมงาน</label>
+        <input type="text" name="entry.149043788" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <div class="flex flex-col">
+        <label class="text-sm font-medium text-gray-700 mb-1">วันที่ (ลงชื่อ ผู้ควบคุมงาน)</label>
+        <input type="date" name="entry.1841850269" required class="p-2 border border-gray-300 rounded-lg bg-pink-100">
+      </div>
+
+      <button type="submit" class="mt-4 w-full py-3 bg-pink-400 hover:bg-pink-500 text-white rounded-lg shadow">
+        ส่งข้อมูล
+      </button>
+    </form>
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+  </div>
+</body>
+</html>
